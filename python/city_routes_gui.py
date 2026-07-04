@@ -86,7 +86,7 @@ class RouteApp(tk.Tk):
     def __init__(self, model: GraphModel):
         super().__init__()
         self.model = model
-        self.title("CityScope · Route Optimizer")
+        self.title("Find My Route · Route Optimizer")
         self.geometry("1400x850")
         self.minsize(1040, 680)
         self.configure(bg=BG)
@@ -140,7 +140,7 @@ class RouteApp(tk.Tk):
 
         head = ttk.Frame(self.sidebar, style="Panel.TFrame")
         head.pack(fill="x", padx=22, pady=(23, 20))
-        ttk.Label(head, text="CITYSCOPE", style="Title.TLabel").pack(anchor="w")
+        ttk.Label(head, text="Find My Route", style="Title.TLabel").pack(anchor="w")
         ttk.Label(head, text="GRAPH THEORY · ROUTE OPTIMIZATION", style="Muted.TLabel").pack(anchor="w", pady=(2, 0))
 
         self._separator()
@@ -342,9 +342,9 @@ def main() -> int:
         return 0
     except Exception as exc:
         try:
-            root = tk.Tk(); root.withdraw(); messagebox.showerror("CityScope could not start", str(exc)); root.destroy()
+            root = tk.Tk(); root.withdraw(); messagebox.showerror("application could not start", str(exc)); root.destroy()
         except tk.TclError:
-            print(f"CityScope could not start: {exc}", file=sys.stderr)
+            print(f"application could not start: {exc}", file=sys.stderr)
         return 1
 
 
