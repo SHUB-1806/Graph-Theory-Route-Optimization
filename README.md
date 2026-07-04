@@ -1,6 +1,6 @@
-# CityScope — Graph Theory & Route Optimization
+# Find My Route — Graph Theory & Route Optimization
 
-CityScope is a complete desktop project for studying a synthetic 500-city road network. The graph and shortest paths are handled in **C++**; the interactive visualization is written entirely in **Python/Tkinter**. There is no web application and no JavaScript.
+'Find My Route' is a complete desktop project for studying a synthetic 500-city road network. The graph and shortest paths are handled in **C++**; the interactive visualization is written entirely in **Python/Tkinter**. There is no web application and no JavaScript.
 
 ## What it demonstrates
 
